@@ -7,3 +7,7 @@ test("empty string", () => {
 test("1 number string", () => {
   expect(sum("1")).toBe(1);
 });
+
+test("2 number string", () => {
+  expect(sum("1,5")).toBe(6);
+});
