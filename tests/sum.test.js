@@ -11,3 +11,7 @@ test("1 number string", () => {
 test("2 number string", () => {
   expect(sum("1,5")).toBe(6);
 });
+
+test("multiple numbers string", () => {
+  expect(sum("1,2,3,4,5")).toBe(15);
+});
