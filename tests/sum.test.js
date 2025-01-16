@@ -19,3 +19,9 @@ test("multiple numbers string", () => {
 test("handles new lines between numbers string", () => {
   expect(sum("1\n2,3")).toBe(6);
 });
+
+test("calling negative numbers with sum will throw exception", () => {
+  expect(() => sum("1, -2, 3, -4, 5, -6")).toThrow(
+    "negative numbers not allowed -2,-4,-6"
+  );
+});
